@@ -12,7 +12,7 @@ export default (results) => {
         messageChain: [
           {
             type: 'Plain',
-            text: `检测到${results.interceptCount}个网址被拦截\r${results.urls.filter(e => e.data == 1).map(e => `https://urlsec.qq.com/complain.html?url=${e.url}
+            text: `检测到${results.interceptCount}个网址被拦截\r${results.urls.filter(e => e.data == 1).map(e => `https://txwz.qq.com/wechat/qqurlcomplain?src=3&url=${e.url}
             `).join('\r')}`
           }
         ]

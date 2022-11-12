@@ -36,5 +36,5 @@ const job = () => {
   check()
 }
 
-// schedule.scheduleJob(config.cron, job)
-job()
+schedule.scheduleJob(config.cron, job)
+// job()
