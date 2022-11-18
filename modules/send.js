@@ -2,6 +2,9 @@ import config from '../config.js'
 import { message, send } from './ws.js'
 
 export default (results) => {
+  if (results.interceptCount == 0) {
+    return
+  }
   if (config.bot.enable) {
     send({
       'syncId': 123, // 消息同步的字段
